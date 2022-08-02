@@ -1,0 +1,63 @@
+{
+  "kind": "collectionType",
+  "collectionName": "prospects",
+  "info": {
+    "singularName": "prospect",
+    "pluralName": "prospects",
+    "displayName": "prospect",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "name": {
+      "type": "string",
+      "required": true
+    },
+    "email": {
+      "type": "email",
+      "required": true
+    },
+    "prenom": {
+      "type": "text",
+      "required": true
+    },
+    "phone": {
+      "type": "biginteger",
+      "required": true
+    },
+    "prestation": {
+      "type": "string"
+    },
+    "habitation": {
+      "type": "text"
+    },
+    "age": {
+      "type": "text"
+    },
+    "surface": {
+      "type": "text"
+    },
+    "date": {
+      "type": "text"
+    },
+    "codePostal": {
+      "type": "biginteger",
+      "required": true
+    },
+    "rgpd": {
+      "type": "boolean",
+      "required": true
+    },
+    "newslaters": {
+      "type": "boolean",
+      "default": false,
+      "required": false
+    },
+    "comments": {
+      "type": "richtext"
+    }
+  }
+}

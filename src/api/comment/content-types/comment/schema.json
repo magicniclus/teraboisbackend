@@ -1,0 +1,38 @@
+{
+  "kind": "collectionType",
+  "collectionName": "comments",
+  "info": {
+    "singularName": "comment",
+    "pluralName": "comments",
+    "displayName": "comments",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "img": {
+      "type": "media",
+      "multiple": false,
+      "required": true,
+      "allowedTypes": [
+        "images"
+      ]
+    },
+    "name": {
+      "type": "string",
+      "required": true
+    },
+    "commentaire": {
+      "type": "richtext"
+    },
+    "note": {
+      "type": "biginteger",
+      "required": true,
+      "max": "5",
+      "min": "1",
+      "default": "5"
+    }
+  }
+}
