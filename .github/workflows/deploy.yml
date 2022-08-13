@@ -16,8 +16,8 @@ jobs:
       run: zip -r deploy.zip . -x '*.git*'
 
     - name: Create app version
-        id: vars
-        run: echo "::set-output name=sha_short::$(git rev-parse --short HEAD)"
+      id: vars
+      run: echo "::set-output name=sha_short::$(git rev-parse --short HEAD)"
 
     - name: Deploy to EB
       uses: einaregilsson/beanstalk-deploy@v20
