@@ -5,7 +5,7 @@ on:
       - actions
 
 jobs:
-  build:
+  build and deploy:
     runs-on: ubuntu-latest
     steps:
 
@@ -25,7 +25,7 @@ jobs:
         aws_access_key: ${{ secrets.AWS_ACCESS_KEY_ID }}
         aws_secret_key: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
         application_name: terabois
-        environment_name: Terabois-env
+        environment_name: Terabois-server-env
         version_label: ${{ steps.vars.outputs.sha_short }}
         region: eu-west-3
         deployment_package: deploy.zip
